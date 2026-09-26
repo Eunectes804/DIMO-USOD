@@ -1,0 +1,37 @@
+# Python / editors
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.egg-info/
+build/
+dist/
+
+# Local data
+/data/
+
+# Weights are separate release assets
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+/pretrained/
+/checkpoints/
+
+# Generated runs / outputs
+/runs/
+/results/
+/logs/
+/tmp/
+*.log
+*.npz
+*.npy
+.env
+.env.*
+!.env.example
