@@ -233,7 +233,8 @@ class TinyNeXtSBackbone(nn.Module):
         weight_path = Path(path)
         if not weight_path.is_file():
             raise FileNotFoundError(f"TinyNeXt-S weights not found: {weight_path}")
-        state = self._unwrap(torch.load(weight_path, map_location="cpu"))
+        # Official ImageNet checkpoints include non-tensor training metadata.
+        state = self._unwrap(torch.load(weight_path, map_location="cpu", weights_only=False))
         current = self.state_dict()
         matched: Dict[str, torch.Tensor] = {}
         ignored: List[str] = []
