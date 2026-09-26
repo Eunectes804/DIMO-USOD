@@ -25,7 +25,7 @@ data/USOD10K/
 └── USOD10K_TE/{RGB,GT}/
 ```
 
-Place [TinyNeXt-S ImageNet weights](https://github.com/yuffeenn/TinyNeXt/tree/main/classification) at `pretrained/tinynext_s.pth` and trained DIMO-USOD weights at `checkpoints/dimo_usod_final.pth`.
+Place [TinyNeXt-S ImageNet weights](https://github.com/yuffeenn/TinyNeXt/tree/main/classification) at `pretrained/tinynext_s.pth`. Download the [final DIMO-USOD checkpoint](https://github.com/Eunectes804/DIMO-USOD/releases/download/v1.0.0/dimo_usod_final.pth) and place it at `checkpoints/dimo_usod_final.pth`.
 
 ## Training
 
